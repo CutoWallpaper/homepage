@@ -30,6 +30,11 @@ export default async function RootLayout({
       className="bg-white dark:bg-black text-black dark:text-white"
     >
       <body className={inter.className}>{children}</body>
+      <script
+        async
+        src="https://insights.userconnect.us/core"
+        data-website-id="e23e540a-4d1f-40ab-84a8-50d85c69ec27"
+      ></script>
     </html>
   );
 }

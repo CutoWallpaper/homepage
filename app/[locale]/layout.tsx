@@ -25,10 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     openGraph: {
       title,
-      images: [
-        "https://cuto.app/homepage.webp",
-        "https://cuto.app/screenshot.png",
-      ],
+      images: ["https://cuto.app/assets/homepage.webp"],
       description,
       url: "https://cuto.app",
       emails: ["hi@cutowallpaper.com"],
@@ -39,10 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       creator: "@lancewangx",
-      images: [
-        "https://cuto.app/homepage.webp",
-        "https://cuto.app/screenshot.png",
-      ],
+      images: ["https://cuto.app/assets/homepage.webp"],
       app: {
         name: title,
         id: {

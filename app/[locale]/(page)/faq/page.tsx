@@ -4,10 +4,7 @@ type Props = {
   params: { locale: string };
 };
 
-export async function generateMetadata(
-  { params }: Props,
-  parent?: ResolvingMetadata
-): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { meta } = await import(`./faq.${params.locale}.mdx`);
   return {
     title: meta.title,

@@ -12,20 +12,6 @@ export const metadata: Metadata = {
     "Cuto is an iOS/Android app dedicated for bringing great wallpapers. Every wallpaper in Cuto is handpicked by our editors, only to deliver you a more suitable wallpaper.",
 };
 
-export function generateStaticParams() {
-  return [
-    { locale: "en" },
-    { locale: "zh" },
-    { locale: "ja" },
-    { locale: "ko" },
-    { locale: "ru" },
-    { locale: "fr" },
-    { locale: "de" },
-    { locale: "es" },
-    { locale: "it" },
-  ];
-}
-
 export default async function RootLayout({
   children,
   params,

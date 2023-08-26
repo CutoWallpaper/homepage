@@ -1,0 +1,26 @@
+{
+  "Common": {
+    "download": "下载"
+  },
+  "Index": {
+    "title": "Cuto 壁纸",
+    "description": "Cuto 是一款旨在为你提供精选壁纸的 iOS/Android 软件. 在 Cuto 里的每一张壁纸，都由编辑人工精挑细选，只为给你提供更适合的壁纸。",
+    "slogan": "每日为你精选最佳壁纸",
+    "androidMoreOptions": "更多选项",
+    "footerStoryTitle": "我们的故事",
+    "footerFAQTitle": "FAQ",
+    "footerContactTitle": "联系我们",
+    "footerPrivacyTitle": "隐私政策",
+    "downloadAndroidAPK": "下载 APK"
+  },
+  "Reset": {
+    "resetPassword": "重置密码",
+    "resetSuccess": "重置密码的邮件已经发送到您的邮箱。",
+    "resetInstructions": "请遵循邮件中的指导进行。",
+    "resetPlaceholder": "输入邮件",
+    "setpassSuccess": "您的密码已经更新。",
+    "setpassPlaceholder": "输入新密码",
+    "setpassEmailPlaceholder": "输入邮箱",
+    "setpassHint": "新密码至少为6位且不能是纯数字或简单密码"
+  }
+}

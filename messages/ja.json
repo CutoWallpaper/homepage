@@ -1,0 +1,26 @@
+{
+  "Common": {
+    "download": "ダウンロード"
+  },
+  "Index": {
+    "title": "Cuto壁紙",
+    "description": "Cutoは、優れた壁紙を提供するためのiOS/Androidアプリです。Cutoの壁紙はすべて、編集者によって厳選され、より適切な壁紙を提供するためだけに選ばれています。",
+    "slogan": "毎日あなたのために厳選された壁紙。",
+    "androidMoreOptions": "その他のオプション",
+    "footerStoryTitle": "私たちの物語",
+    "footerFAQTitle": "よくある質問",
+    "footerContactTitle": "お問い合わせ",
+    "footerPrivacyTitle": "プライバシーポリシー",
+    "downloadAndroidAPK": "APKをダウンロード"
+  },
+  "Reset": {
+    "resetPassword": "パスワードをリセットする",
+    "resetSuccess": "パスワードリセット用のメールが送信されました。",
+    "resetInstructions": "メール内の手順に従ってください。",
+    "resetPlaceholder": "メールアドレスを入力してください",
+    "setpassSuccess": "パスワードが正常にリセットされました。",
+    "setpassPlaceholder": "新しいパスワードを入力してください",
+    "setpassEmailPlaceholder": "メールアドレスを入力してください",
+    "setpassHint": "新しいパスワードは6文字以上で、すべての数字や一般的なパスワードではない必要があります"
+  }
+}

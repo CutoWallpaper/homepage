@@ -1,0 +1,26 @@
+{
+  "Common": {
+    "download": "Descargar"
+  },
+  "Index": {
+    "title": "Cuto Wallpaper",
+    "description": "Cuto es una aplicación para iOS/Android dedicada a ofrecer excelentes fondos de pantalla. Cada fondo de pantalla en Cuto es seleccionado a mano por nuestros editores, solo para ofrecerte un fondo de pantalla más adecuado.",
+    "slogan": "Fondos de pantalla seleccionados a mano para ti todos los días.",
+    "androidMoreOptions": "Más opciones",
+    "footerStoryTitle": "Nuestra Historia",
+    "footerFAQTitle": "Preguntas Frecuentes",
+    "footerContactTitle": "Contáctenos",
+    "footerPrivacyTitle": "Política de Privacidad",
+    "downloadAndroidAPK": "Descargar APK"
+  },
+  "Reset": {
+    "resetPassword": "Restablecer mi contraseña",
+    "resetSuccess": "Se ha enviado un correo electrónico para restablecer la contraseña a tu buzón.",
+    "resetInstructions": "Por favor, sigue las instrucciones en el correo electrónico.",
+    "resetPlaceholder": "Escribe tu correo electrónico",
+    "setpassSuccess": "Tu contraseña ha sido restablecida con éxito.",
+    "setpassPlaceholder": "Escribe tu nueva contraseña",
+    "setpassEmailPlaceholder": "Escribe tu correo electrónico",
+    "setpassHint": "La nueva contraseña debe tener al menos 6 caracteres y no ser completamente numérica o una contraseña común"
+  }
+}

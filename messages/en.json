@@ -1,0 +1,26 @@
+{
+  "Common": {
+    "download": "Download"
+  },
+  "Index": {
+    "title": "Cuto Wallpaper",
+    "description": "Cuto is an iOS/Android app dedicated for bringing great wallpapers. Every wallpaper in Cuto is handpicked by our editors, only to deliver you a more suitable wallpaper.",
+    "slogan": "Handpicked wallpapers for you everyday.",
+    "androidMoreOptions": "More options",
+    "footerStoryTitle": "Our Story",
+    "footerFAQTitle": "FAQ",
+    "footerContactTitle": "Contact Us",
+    "footerPrivacyTitle": "Privacy Policy",
+    "downloadAndroidAPK": "Download APK"
+  },
+  "Reset": {
+    "resetPassword": "Reset My Password",
+    "resetSuccess": "A password reset email has been sent to your mailbox. ",
+    "resetInstructions": "Please follow the instructions in the email.",
+    "resetPlaceholder": "Type your email",
+    "setpassSuccess": "Your password has been reset successfully.",
+    "setpassPlaceholder": "Type your new password",
+    "setpassEmailPlaceholder": "Type your email",
+    "setpassHint": "New password must be at least 6 characters, and is not full numeric or common password"
+  }
+}

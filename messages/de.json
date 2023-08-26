@@ -1,0 +1,26 @@
+{
+  "Common": {
+    "download": "Herunterladen"
+  },
+  "Index": {
+    "title": "Cuto Hintergrundbilder",
+    "description": "Cuto ist eine iOS/Android-App, die sich darauf spezialisiert hat, großartige Hintergrundbilder zu liefern. Jedes Hintergrundbild in Cuto wird von unseren Redakteuren handverlesen, um Ihnen ein passenderes Hintergrundbild zu bieten.",
+    "slogan": "Jeden Tag handverlesene Hintergrundbilder für Sie.",
+    "androidMoreOptions": "Mehr Optionen",
+    "footerStoryTitle": "Unsere Geschichte",
+    "footerFAQTitle": "FAQ",
+    "footerContactTitle": "Kontakt",
+    "footerPrivacyTitle": "Datenschutzrichtlinie",
+    "downloadAndroidAPK": "APK herunterladen"
+  },
+  "Reset": {
+    "resetPassword": "Mein Passwort zurücksetzen",
+    "resetSuccess": "Eine E-Mail zum Zurücksetzen des Passworts wurde an Ihren Posteingang gesendet.",
+    "resetInstructions": "Bitte folgen Sie den Anweisungen in der E-Mail.",
+    "resetPlaceholder": "Geben Sie Ihre E-Mail ein",
+    "setpassSuccess": "Ihr Passwort wurde erfolgreich zurückgesetzt.",
+    "setpassPlaceholder": "Geben Sie Ihr neues Passwort ein",
+    "setpassEmailPlaceholder": "Geben Sie Ihre E-Mail ein",
+    "setpassHint": "Das neue Passwort muss mindestens 6 Zeichen lang sein und darf nicht ausschließlich aus Zahlen oder einem gebräuchlichen Passwort bestehen."
+  }
+}

@@ -21,6 +21,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/:locale/apk/download",
+        destination: "https://www.cutowallpaper.com/apk/download",
+        permanent: false,
+      },
+      {
+        source: "/:locale/apk/latest",
+        destination: "https://www.cutowallpaper.com/apk/latest",
+        permanent: false,
+      },
+      {
         source: "/apk/download",
         destination: "https://www.cutowallpaper.com/apk/download",
         permanent: false,

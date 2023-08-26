@@ -2,15 +2,57 @@ import "@/app/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
-import { useLocale } from "next-intl";
+import { createTranslator, useLocale, useTranslations } from "next-intl";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Cuto Wallpaper",
-  description:
-    "Cuto is an iOS/Android app dedicated for bringing great wallpapers. Every wallpaper in Cuto is handpicked by our editors, only to deliver you a more suitable wallpaper.",
+type Props = {
+  params: { locale: string };
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const messages = (await import(`../../messages/${params.locale}.json`))
+    .default;
+  const t = createTranslator({
+    locale: params.locale,
+    messages,
+    namespace: "Index",
+  });
+  const title = t("title");
+  const description = t("description");
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      images: [
+        "https://cuto.app/homepage.webp",
+        "https://cuto.app/screenshot.png",
+      ],
+      description,
+      url: "https://cuto.app",
+      emails: ["hi@cutowallpaper.com"],
+      siteName: title,
+    },
+    twitter: {
+      card: "app",
+      title,
+      description,
+      creator: "@lancewangx",
+      images: [
+        "https://cuto.app/homepage.webp",
+        "https://cuto.app/screenshot.png",
+      ],
+      app: {
+        name: title,
+        id: {
+          iphone: "1068086465",
+          googleplay: "com.sspai.cuto.android",
+        },
+      },
+    },
+  };
+}
 
 export default async function RootLayout({
   children,

@@ -9,7 +9,7 @@ import Logo from "../../components/Logo";
 const downloadConfig = {
   appleDownloadUrl: "https://ios.cuto.app",
   androidGoogleUrl: "https://android.cuto.app",
-  androidAPKDownloadUrl: "https://www.cuto.app/apk/download/",
+  androidAPKDownloadUrl: "https://app.cutowallpaper.com/apk/download/",
 };
 
 export default function Home() {

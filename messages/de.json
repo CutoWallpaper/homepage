@@ -22,5 +22,15 @@
     "setpassPlaceholder": "Geben Sie Ihr neues Passwort ein",
     "setpassEmailPlaceholder": "Geben Sie Ihre E-Mail ein",
     "setpassHint": "Das neue Passwort muss mindestens 6 Zeichen lang sein und darf nicht ausschließlich aus Zahlen oder einem gebräuchlichen Passwort bestehen."
+  },
+  "Redeem": {
+    "redeemSubmit": "Einlösen",
+    "redeemSuccess": "Herzlichen Glückwunsch! Sie haben erfolgreich Cuto Pro eingelöst.",
+    "redeemInstructions": "Wenn Sie noch kein Cuto-Konto haben, wird Ihnen eins erstellt.",
+    "redeemEmailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "setpassPlaceholder": "Geben Sie Ihr Passwort ein",
+    "setpassEmailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "redeemCouponPlaceholder": "Geben Sie den Gutscheincode ein",
+    "setpassHint": "Das Passwort muss mindestens 6 Zeichen lang sein und darf nicht vollständig numerisch oder ein gängiges Passwort sein"
   }
 }

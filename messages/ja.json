@@ -22,5 +22,15 @@
     "setpassPlaceholder": "新しいパスワードを入力してください",
     "setpassEmailPlaceholder": "メールアドレスを入力してください",
     "setpassHint": "新しいパスワードは6文字以上で、すべての数字や一般的なパスワードではない必要があります"
+  },
+  "Redeem": {
+    "redeemSubmit": "引き換え",
+    "redeemSuccess": "おめでとうございます！Cuto Proを無事に引き換えました。",
+    "redeemInstructions": "Cutoアカウントをお持ちでない場合、新しいアカウントが作成されます。",
+    "redeemEmailPlaceholder": "メールアドレスを入力してください",
+    "setpassPlaceholder": "パスワードを入力してください",
+    "setpassEmailPlaceholder": "メールアドレスを入力してください",
+    "redeemCouponPlaceholder": "クーポンコードを入力してください",
+    "setpassHint": "パスワードは6文字以上で数字のみでなく、一般的なパスワードでない必要があります"
   }
 }

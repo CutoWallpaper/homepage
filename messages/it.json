@@ -22,5 +22,15 @@
     "setpassPlaceholder": "Inserisci la tua nuova password",
     "setpassEmailPlaceholder": "Inserisci la tua email",
     "setpassHint": "La nuova password deve essere di almeno 6 caratteri e non deve essere interamente numerica o una password comune"
+  },
+  "Redeem": {
+    "redeemSubmit": "Riscatta",
+    "redeemSuccess": "Complimenti! Hai riscattato con successo Cuto Pro.",
+    "redeemInstructions": "Se non hai un account Cuto, ne verrà creato uno per te.",
+    "redeemEmailPlaceholder": "Inserisci la tua email",
+    "setpassPlaceholder": "Inserisci la tua password",
+    "setpassEmailPlaceholder": "Inserisci la tua email",
+    "redeemCouponPlaceholder": "Inserisci il codice coupon",
+    "setpassHint": "La password deve essere lunga almeno 6 caratteri e non essere completamente numerica o una password comune"
   }
 }

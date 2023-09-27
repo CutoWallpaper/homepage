@@ -4,27 +4,23 @@ import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import styles from "./ResetForm.module.css";
+import styles from "./RedeemForm.module.css";
 
 type Props = {
   i18n: LocalizationString;
 };
 
 type LocalizationString = {
-  resetInstructions: string;
-  resetSuccess: string;
-  resetPassword: string;
-  setpassSuccess: string;
+  redeemInstructions: string;
+  redeemSuccess: string;
+  redeemSubmit: string;
   setpassPlaceholder: string;
-  setpassEmailPlaceholder: string;
+  redeemEmailPlaceholder: string;
+  redeemCouponPlaceholder: string;
   setpassHint: string;
 };
 
-export default function ResetForm({ i18n }: Props) {
-  const searchParams = useSearchParams();
-  const token = searchParams.get("token");
-  const withToken = token !== null && token !== undefined;
-
+export default function RedeemForm({ i18n }: Props) {
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState<string[]>([]);
   const [success, setSuccess] = useState(false);
@@ -32,17 +28,12 @@ export default function ResetForm({ i18n }: Props) {
   const resetPassword = async (event: any) => {
     event.preventDefault(); // don't redirect the page
     setLoading(true);
-    const endpoint = withToken
-      ? "https://api.cutowallpaper.com/api/v2/account/password/reset/confirm/"
-      : "https://api.cutowallpaper.com/api/v2/account/password/reset/";
-    const data = withToken
-      ? {
-          token: token,
-          password: event.target.password.value,
-        }
-      : {
-          email: event.target.email.value,
-        };
+    const endpoint = "https://api.cutowallpaper.com/api/v2/account/redeem/";
+    const data = {
+      username: event.target.username.value,
+      password: event.target.password.value,
+      coupon: event.target.coupon.value,
+    };
     try {
       const res = await fetch(endpoint, {
         body: JSON.stringify(data),
@@ -54,7 +45,16 @@ export default function ResetForm({ i18n }: Props) {
       if (res.status == 200) {
         setSuccess(true);
       } else {
-        setErrors(["We couldn't reset your password. Please try again."]);
+        let json = await res.json();
+        if (Array.isArray(json)) {
+          setErrors(json);
+        } else {
+          var errs = [];
+          for (const key in json) {
+            errs.push(`${key}: ${json[key]}`);
+          }
+          setErrors(errs);
+        }
       }
     } catch (err: any) {
       setErrors([err.toString()]);
@@ -65,9 +65,6 @@ export default function ResetForm({ i18n }: Props) {
 
   var content;
   if (success) {
-    const instruction = withToken ? null : (
-      <p className="text-green-800 p-2">{i18n.resetInstructions}</p>
-    );
     content = (
       <div className="flex flex-col justify-center items-center">
         <Image
@@ -78,18 +75,27 @@ export default function ResetForm({ i18n }: Props) {
           objectFit="contain"
         />
         <div className="flex flex-col justify-center items-center mt-10">
-          <p className="text-green-800 p-2">
-            {withToken ? i18n.setpassSuccess : i18n.resetSuccess}
-          </p>
-          {instruction}
+          <p className="text-green-800 p-2">{i18n.redeemSuccess}</p>
         </div>
       </div>
     );
   } else if (loading) {
-    content = <div className=""></div>;
+    content = <div className="">Loading...</div>;
   } else {
-    const input = withToken ? (
-      <div>
+    content = (
+      <form
+        onSubmit={resetPassword}
+        className="flex flex-col justify-center items-center"
+      >
+        <p>{i18n.redeemInstructions}</p>
+        <input
+          className={styles.input}
+          type="email"
+          id="username"
+          autoComplete="off"
+          placeholder={i18n.redeemEmailPlaceholder}
+          required
+        />
         <input
           className={styles.input}
           type="password"
@@ -98,26 +104,17 @@ export default function ResetForm({ i18n }: Props) {
           placeholder={i18n.setpassPlaceholder}
           required
         />
-        <p className="text-gray-800 text-sm mt-5">{i18n.setpassHint}</p>
-      </div>
-    ) : (
-      <input
-        className={styles.input}
-        type="email"
-        id="email"
-        autoComplete="off"
-        placeholder={i18n.setpassEmailPlaceholder}
-        required
-      />
-    );
-    content = (
-      <form
-        onSubmit={resetPassword}
-        className="flex flex-col justify-center items-center"
-      >
-        {input}
+        <p className="text-gray-400 text-sm mt-5">{i18n.setpassHint}</p>
+        <input
+          className={styles.input}
+          type="text"
+          id="coupon"
+          autoComplete="off"
+          placeholder={i18n.redeemCouponPlaceholder}
+          required
+        />
         <button className={styles.submit} type="submit">
-          {i18n.resetPassword}
+          {i18n.redeemSubmit}
         </button>
       </form>
     );
@@ -136,11 +133,9 @@ export default function ResetForm({ i18n }: Props) {
   }
 
   return (
-    // <Layout title={t("resetPassword")}>
     <div className="flex flex-col justify-center items-center">
       {content}
       {errorContent}
     </div>
-    // </Layout>
   );
 }

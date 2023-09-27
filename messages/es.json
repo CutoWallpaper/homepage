@@ -22,5 +22,15 @@
     "setpassPlaceholder": "Escribe tu nueva contraseña",
     "setpassEmailPlaceholder": "Escribe tu correo electrónico",
     "setpassHint": "La nueva contraseña debe tener al menos 6 caracteres y no ser completamente numérica o una contraseña común"
+  },
+  "Redeem": {
+    "redeemSubmit": "Canjear",
+    "redeemSuccess": "¡Felicidades! Has canjeado correctamente Cuto Pro.",
+    "redeemInstructions": "Si no tienes una cuenta de Cuto, esto te creará una.",
+    "redeemEmailPlaceholder": "Escribe tu correo electrónico",
+    "setpassPlaceholder": "Escribe tu contraseña",
+    "setpassEmailPlaceholder": "Escribe tu correo electrónico",
+    "redeemCouponPlaceholder": "Escriba el código de cupón",
+    "setpassHint": "La contraseña debe tener al menos 6 caracteres y no ser completamente numérica ni una contraseña común"
   }
 }

@@ -1,0 +1,74 @@
+.loader {
+  border: 5px solid #f3f3f3; /* Light grey */
+  border-top: 5px solid #2a2e30; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.input {
+  color: black;
+  border-color: #363b3c;
+  border-radius: 10px;
+  border: 1px solid #363b3c;
+  width: 340px;
+  height: 56px;
+  padding: 16px;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-size: 0.8em;
+}
+.input::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 0.8em;
+}
+.input:-ms-input-placeholder {
+  /* IE 10+ */
+  font-size: 0.8em;
+}
+.input:-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 0.8em;
+}
+
+.submit {
+  background-color: black;
+  color: white;
+  width: 340px;
+  margin-top: 30px;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit:hover {
+  color: rgb(226, 226, 226);
+  background-color: rgb(17, 17, 17);
+}
+
+@media (prefers-color-scheme: dark) {
+  .submit {
+    background-color: white;
+    color: black;
+  }
+
+  .submit:hover {
+    color: rgb(17, 17, 17);
+    background-color: rgb(226, 226, 226);
+  }
+}

@@ -22,5 +22,15 @@
     "setpassPlaceholder": "输入新密码",
     "setpassEmailPlaceholder": "输入邮箱",
     "setpassHint": "新密码至少为6位且不能是纯数字或简单密码"
+  },
+  "Redeem": {
+    "redeemSubmit": "兑换",
+    "redeemSuccess": "恭喜！您已成功兑换 Cuto Pro。",
+    "redeemInstructions": "如果您还没有 Cuto 账户，系统将为您创建一个。",
+    "redeemEmailPlaceholder": "输入您的电子邮件",
+    "setpassPlaceholder": "输入您的密码",
+    "setpassEmailPlaceholder": "输入您的电子邮件",
+    "redeemCouponPlaceholder": "输入兑换码",
+    "setpassHint": "密码长度必须至少为 6 个字符，且不能为纯数字或常用密码"
   }
 }

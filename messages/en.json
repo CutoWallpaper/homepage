@@ -22,5 +22,15 @@
     "setpassPlaceholder": "Type your new password",
     "setpassEmailPlaceholder": "Type your email",
     "setpassHint": "New password must be at least 6 characters, and is not full numeric or common password"
+  },
+  "Redeem": {
+    "redeemSubmit": "Redeem",
+    "redeemSuccess": "Congratulations! You have successfully redeemed Cuto Pro.",
+    "redeemInstructions": "If you don't have a Cuto account, this will create one for you.",
+    "redeemEmailPlaceholder": "Type your email",
+    "setpassPlaceholder": "Type your password",
+    "setpassEmailPlaceholder": "Type your email",
+    "redeemCouponPlaceholder": "Type coupon code",
+    "setpassHint": "The password must be at least 6 characters, and is not full numeric or common password"
   }
 }

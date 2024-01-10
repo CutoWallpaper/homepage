@@ -89,7 +89,7 @@ export default function ResetForm({ i18n }: Props) {
     content = <div className=""></div>;
   } else {
     const input = withToken ? (
-      <div>
+      <div className="flex flex-col items-center">
         <input
           className={styles.input}
           type="password"

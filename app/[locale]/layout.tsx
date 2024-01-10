@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { createTranslator, useLocale, useTranslations } from "next-intl";
+import { Suspense } from "react";
+import { PHProvider, PostHogPageview } from "../providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -65,12 +67,12 @@ export default async function RootLayout({
       lang={locale}
       className="bg-white dark:bg-black text-black dark:text-white"
     >
-      <body className={inter.className}>{children}</body>
-      <script
-        async
-        src="https://insights.userconnect.us/core"
-        data-website-id="e23e540a-4d1f-40ab-84a8-50d85c69ec27"
-      ></script>
+      <Suspense>
+        <PostHogPageview />
+      </Suspense>
+      <PHProvider>
+        <body className={inter.className}>{children}</body>
+      </PHProvider>
     </html>
   );
 }

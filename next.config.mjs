@@ -40,6 +40,11 @@ const nextConfig = {
         destination: "https://www.cutowallpaper.com/apk/latest",
         permanent: false,
       },
+      {
+        source: "/insights/:path*",
+        destination: "https://app.posthog.com/:path*",
+        permanent: false,
+      },
     ];
   },
 };

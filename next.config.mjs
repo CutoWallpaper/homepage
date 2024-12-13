@@ -45,6 +45,11 @@ const nextConfig = {
         destination: "https://app.posthog.com/:path*",
         permanent: false,
       },
+      {
+        source: "/api/revenue/:path*",
+        destination: "https://api.revenuecat.com/:path*",
+        permanent: false,
+      },
     ];
   },
 };
